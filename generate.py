@@ -60,7 +60,7 @@ def main():
         f"scoreboard players set @a[scores={{time={duration}}}] time -1"
     ]
 
-    linear = False
+    linear = True
 
     for i in range(1, len(route)):
         start_position = route[i - 1][0]
