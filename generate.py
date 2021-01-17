@@ -33,7 +33,7 @@ def write(fp, data):
 
 def get_coords_list(fp):
     with open(fp, newline="") as csvfile:
-        reader = csv.reader(csvfile, delimiter=";")
+        reader = csv.reader(csvfile, delimiter=",")
         data = list(reader)
         return np.array(data[1:]).astype(np.float)
 
